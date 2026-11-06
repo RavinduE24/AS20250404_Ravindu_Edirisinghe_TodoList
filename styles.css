@@ -1,0 +1,20 @@
+/* Custom Styles for the To-Do List */
+
+/* 
+  When a task is marked as complete, we change its visual state.
+  This gives it the strike-through effect and fades the text color.
+*/
+.completed-task .task-text {
+    text-decoration: line-through;
+    color: #6c757d; 
+}
+
+/* 
+  We use flexbox here to push the checkbox/text to the left,
+  and the delete button to the far right. 
+*/
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
